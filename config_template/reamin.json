@@ -78,7 +78,7 @@
             }
         ],
         "final": "localDns",
-        "strategy": "ipv4_only"
+        "strategy": "prefer_ipv6"
     },
     "inbounds": [
         {
@@ -296,12 +296,7 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": [
-                        "🇭🇰|自建|FR|CF|"
-                    ]
-                }
-            ]
-        },
+                    "keywords": ["自建|FR|CF|"] }, { "action": "exclude", "keywords": ["香港|港|HK|hk|HongKong|🇺🇸|US|us|美国|美|United States|🇯🇵|JP|jp|日本|日|Japan|网站|地址|剩余|过期|时间|有效"] }] },
         {
             "tag": "🇯🇵 日本节点",
             "type": "selector",
